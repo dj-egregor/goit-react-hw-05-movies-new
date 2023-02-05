@@ -3,10 +3,8 @@ import PropTypes from 'prop-types';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 function Paginator({ totalPages, setSearchParams, params, currentPage }) {
-  console.log(currentPage);
 
   const handlePageClick = event => {
-    // setSearchParams({ ...params, page: event.selected + 1 });
     // устанавливаю page= номеру страницы в URL
 
     // передаем другие параметры из строки в url

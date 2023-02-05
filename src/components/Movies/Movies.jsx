@@ -30,7 +30,6 @@ const Movies = () => {
       try {
         setLoading(true);
         const { data } = await searchMovie(query, page);
-        console.log(data);
         setMovies(data.results);
         setLoading(false);
         settotalPages(data.total_pages);
