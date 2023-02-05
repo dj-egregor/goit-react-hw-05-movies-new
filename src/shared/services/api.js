@@ -16,6 +16,7 @@ export async function getTrendingMovies(page) {
         page,
       },
     });
+
     return data;
   } catch (error) {
     throw error;
